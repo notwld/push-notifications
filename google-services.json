@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "542225061443",
+    "project_id": "push-notifications-76820",
+    "storage_bucket": "push-notifications-76820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542225061443:android:8690d475a5467c9a0ea6f6",
+        "android_client_info": {
+          "package_name": "com.blurryface.pushnotifications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoLqaOROhgWEPoebbuEPU7-koAfw23hVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
