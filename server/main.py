@@ -8,10 +8,8 @@ import os,time,requests
 app = Flask(__name__)
 CORS(app)
 
-# DATABASE_URL = os.environ.get("DATABASE_URL")
-DATABASE_URL = "postgres://postgres:salad123@localhost:5432"
-DATABASE_URL = str(DATABASE_URL).replace("postgres://", "postgresql://", 1)
-app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)

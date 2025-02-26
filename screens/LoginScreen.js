@@ -7,7 +7,7 @@ const LoginScreen = ({ navigation }) => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('http://192.168.1.107:5000/login', {
+            const response = await fetch('http://192.168.0.133:5000/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ const LoginScreen = ({ navigation }) => {
                 await AsyncStorage.setItem('user', JSON.stringify(data.user)).then(async () => {
                     await AsyncStorage.getItem("pushToken").then((token) => {
                         if (token) {
-                            fetch('http:192.168.1.107:5000/add-expo-token', {
+                            fetch('http:192.168.0.133:5000/add-expo-token', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json'
